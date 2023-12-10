@@ -1,28 +1,9 @@
 'use client'
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Container, Logo, NavItem, WavingHand } from '@/components'
-import { motion, useAnimation } from 'framer-motion'
-
-const waveAnimation = {
-  rotate: [0, 20, -10, 0],
-  x: [0, 5, -5, 0],
-  transition: {
-    type: 'sprting',
-    ease: 'easeIn',
-    delay: 0.7,
-    duration: 0.7,
-  }
-}
+import { motion } from 'framer-motion'
 
 export default function Home() {
-  const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
-  const waveAnimationControls = useAnimation();
-
-  useEffect(() => {
-    waveAnimationControls.start(waveAnimation)
-  }, [waveAnimationControls])
-
   return (
     <main className="h-screen relative">
       <Container className="flex justify-between pt-7">
@@ -70,19 +51,7 @@ export default function Home() {
                   x: 0
                 }}
                 className="flex items-center gap-x-3">
-                <motion.div
-                  animate={waveAnimationControls}
-                  onHoverStart={() => {
-                    if (!isAnimationPlaying) {
-                      setIsAnimationPlaying(true)
-                      waveAnimationControls.start(waveAnimation)
-                    }
-                  }}
-                  onAnimationComplete={() => {
-                    setIsAnimationPlaying(false)
-                  }}>
-                  <WavingHand className="text-primary-600 cursor-grab" />
-                </motion.div>
+                <WavingHand className="text-primary-600 cursor-grab" />
                 <span>Hello!</span>
               </motion.div>
               <motion.div
@@ -121,7 +90,6 @@ export default function Home() {
         width={96}
         height={96}
         priority />
-      
     </main>
   )
 }
