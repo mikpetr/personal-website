@@ -1,4 +1,5 @@
 export * from './Container'
 export * from './Logo'
-export * from './NavItem'
-export * from './WavingHand'
+export * from './Navigation'
+export * from './NextPage'
+export * from './NotionResumeLink'

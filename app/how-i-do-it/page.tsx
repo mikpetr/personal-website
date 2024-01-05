@@ -1,0 +1,1 @@
+export { HowIDoIt as default } from './HowIDoIt'

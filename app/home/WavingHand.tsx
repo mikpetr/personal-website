@@ -7,15 +7,13 @@ const waveAnimation = {
   rotate: [0, 20, -10, 0],
   x: [0, 5, -5, 0],
   transition: {
-    type: 'spring',
-    ease: 'easeIn',
     delay: 0.7,
     duration: 0.7,
   }
 }
 
 type WavingHandPropsType = {
-  className: string;
+  className: string
 }
 
 const size = 32

@@ -2,8 +2,8 @@ import { ReactNode } from 'react'
 import clsx from 'clsx'
 
 type ContainerPropsType = {
-  children: ReactNode;
-  className?: string;
+  children: ReactNode
+  className?: string
 }
 
 const containerStyles = 'mx-auto max-w-5xl'
