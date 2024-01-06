@@ -9,7 +9,7 @@ export const Navigation = () => {
   const path = usePathname()
 
   return (
-    <nav className="flex gap-x-7 items-center">
+    <nav className="flex gap-x-7 items-center text-xl">
       <Link href="/">
         <NavItem active={path === '/'}>Home</NavItem>
       </Link>
@@ -22,16 +22,16 @@ export const Navigation = () => {
           <Image
             src="/linkedin.svg"
             alt="LinkedIn"
-            width="18"
-            height="18"
+            width="22"
+            height="22"
             priority />
         </Link>
         <Link href="https://github.com/mikpetr" target="_blank">
           <Image
             src="/github.svg"
             alt="Github"
-            width="18"
-            height="18"
+            width="22"
+            height="22"
             priority />
         </Link>
       </nav>

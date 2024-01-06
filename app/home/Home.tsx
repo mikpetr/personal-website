@@ -33,7 +33,7 @@ export const HomePage = () => {
           
           <div className="w-[1px] bg-gray-300"></div>
           <div className="flex column items-center">
-            <div className="text-2xl space-y-1">
+            <div className="text-5xl space-y-1">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -43,7 +43,7 @@ export const HomePage = () => {
                   opacity: 1,
                   x: 0
                 }}
-                className="flex items-center gap-x-3">
+                className="flex items-center gap-x-3 text-7xl">
                 <WavingHand className="text-primary-600 cursor-grab" />
                 <span>Hello!</span>
               </motion.div>

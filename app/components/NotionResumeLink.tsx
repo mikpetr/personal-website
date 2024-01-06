@@ -6,13 +6,13 @@ export const NotionResumeLink = () => {
     <Link
       href="https://mikpetr.notion.site/Mikayel-Petrosyan-f61a2099e41a4ea4b69f6cf7b6d208f4"
       target="_blank"
-      className="flex gap-x-1"
+      className="flex gap-x-1 text-xl"
     >
       <Image
         src="/notion.svg"
         alt="Notion"
-        width="18"
-        height="18"
+        width="22"
+        height="22"
         priority />
       <span>My Resume</span>
     </Link>

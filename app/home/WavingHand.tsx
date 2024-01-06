@@ -16,7 +16,7 @@ type WavingHandPropsType = {
   className: string
 }
 
-const size = 32
+const size = 64
 
 export const WavingHand = ({ className }: WavingHandPropsType) => {
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false)
