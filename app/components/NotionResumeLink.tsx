@@ -5,6 +5,7 @@ export const NotionResumeLink = () => {
   return (
     <Link
       href="https://mikpetr.notion.site/Mikayel-Petrosyan-f61a2099e41a4ea4b69f6cf7b6d208f4"
+      target="_blank"
       className="flex gap-x-1"
     >
       <Image
